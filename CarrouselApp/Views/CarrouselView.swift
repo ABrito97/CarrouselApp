@@ -6,34 +6,34 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct CarrouselView: View {
-    var carrouselImageNames: [String]
     let timer = Timer.publish(every: 3.5, on: .main, in: .common).autoconnect()
+    let animals: Animals
+    @State var audioPlayer: AVAudioPlayer?
+    @State private var selectedIndex: Int = 0
+    @State var actualSound: Sound?
     
-    @State private var selectedImageIndex: Int = 0
-
     var body: some View {
         ZStack {
             Color.secondary
                 .ignoresSafeArea()
 
-            TabView(selection: $selectedImageIndex) {
-                ForEach(0..<carrouselImageNames.count, id: \.self) { index in
+            TabView(selection: $selectedIndex) {
+                ForEach(0..<animals.list.count, id: \.self) { index in
                     ZStack(alignment: .topLeading) {
-                        Image("\(carrouselImageNames[index])")
+                        Image("\(animals.list[index])")
                             .resizable()
                             .tag(index)
-                            .frame(width: .infinity, height: .infinity)
                             .edgesIgnoringSafeArea(.all)
                     }
                 }
             }
-            .frame(height: .infinity)
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             .ignoresSafeArea()
             
-            Button(action: {}) {
+            Button(action: {playSound()}) {
                    Image(systemName: "speaker.wave.3")
                      .padding()
                      .foregroundColor(.white)
@@ -45,22 +45,40 @@ struct CarrouselView: View {
             .shadow(color: .white, radius: 15, y: 5)
 
             HStack {
-                ForEach(0..<carrouselImageNames.count, id: \.self) { index in
+                ForEach(0..<animals.list.count, id: \.self) { index in
                     Capsule()
-                        .fill(Color.white.opacity(selectedImageIndex == index ? 1 : 0.33))
-                        .frame(width: 35, height: 8)
+                        .fill(Color.white.opacity(selectedIndex == index ? 1 : 0.40))
+                        .frame(width: 12, height: 12)
                 }
-                .offset(y: 400)
+                .offset(y: 370)
             }
         }
         .onReceive(timer) { _ in
             withAnimation(.default) {
-                selectedImageIndex = (selectedImageIndex + 1) % carrouselImageNames.count
+                selectedIndex = (selectedIndex + 1) % animals.list.count
             }
+        }
+    }
+    
+    func playSound() {
+        audioPlayer = nil
+        actualSound = animals.sounds[selectedIndex]
+        
+        if let url = Bundle.main.url(forResource: actualSound?.file, withExtension: actualSound?.ext) {
+            do {
+                audioPlayer = try AVAudioPlayer.init(contentsOf: url)
+                audioPlayer?.prepareToPlay()
+                audioPlayer?.play()
+            } catch {
+                print("ERROR", error)
+            }
+
         }
     }
 }
 
+
+
 #Preview {
-    CarrouselView(carrouselImageNames: ["dog", "cat", "pig", "horse", "lion", "cow"])
+    CarrouselView(animals: Animals())
 }
