@@ -7,4 +7,4 @@ Features:
   - Scrolleable con gesto
   - Cada imagen incluye un sonido único
 
-Hecho por Alejandro Brito Fuentes 09/05/2025
+Hecho en Xcode con SwiftUI por Alejandro Brito Fuentes 09/05/2025
