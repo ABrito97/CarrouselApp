@@ -11,6 +11,16 @@
 		E40A2AFC2DCE974A00A1C200 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A2AFB2DCE974A00A1C200 /* ContentView.swift */; };
 		E40A2AFE2DCE974C00A1C200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E40A2AFD2DCE974C00A1C200 /* Assets.xcassets */; };
 		E40A2B012DCE974C00A1C200 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E40A2B002DCE974C00A1C200 /* Preview Assets.xcassets */; };
+		E40A2B0B2DCE98C300A1C200 /* TabViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A2B0A2DCE98C300A1C200 /* TabViewList.swift */; };
+		E40A2B0D2DCE998200A1C200 /* NavigationViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A2B0C2DCE998200A1C200 /* NavigationViewList.swift */; };
+		E40A2B112DCE9D2400A1C200 /* AnimalCarrouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A2B102DCE9D2400A1C200 /* AnimalCarrouselView.swift */; };
+		E40A2B132DCE9E3400A1C200 /* CarrouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A2B122DCE9E3400A1C200 /* CarrouselView.swift */; };
+		E40A2B1B2DCEA91A00A1C200 /* lion-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E40A2B152DCEA91A00A1C200 /* lion-sound.mp3 */; };
+		E40A2B1C2DCEA91A00A1C200 /* pig-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E40A2B162DCEA91A00A1C200 /* pig-sound.mp3 */; };
+		E40A2B1D2DCEA91A00A1C200 /* cat-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E40A2B172DCEA91A00A1C200 /* cat-sound.mp3 */; };
+		E40A2B1E2DCEA91A00A1C200 /* horse-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E40A2B182DCEA91A00A1C200 /* horse-sound.mp3 */; };
+		E40A2B1F2DCEA91A00A1C200 /* dog-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E40A2B192DCEA91A00A1C200 /* dog-sound.mp3 */; };
+		E40A2B202DCEA91A00A1C200 /* cow-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E40A2B1A2DCEA91A00A1C200 /* cow-sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,16 @@
 		E40A2AFB2DCE974A00A1C200 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E40A2AFD2DCE974C00A1C200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E40A2B002DCE974C00A1C200 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E40A2B0A2DCE98C300A1C200 /* TabViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewList.swift; sourceTree = "<group>"; };
+		E40A2B0C2DCE998200A1C200 /* NavigationViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewList.swift; sourceTree = "<group>"; };
+		E40A2B102DCE9D2400A1C200 /* AnimalCarrouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCarrouselView.swift; sourceTree = "<group>"; };
+		E40A2B122DCE9E3400A1C200 /* CarrouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrouselView.swift; sourceTree = "<group>"; };
+		E40A2B152DCEA91A00A1C200 /* lion-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "lion-sound.mp3"; sourceTree = "<group>"; };
+		E40A2B162DCEA91A00A1C200 /* pig-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pig-sound.mp3"; sourceTree = "<group>"; };
+		E40A2B172DCEA91A00A1C200 /* cat-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cat-sound.mp3"; sourceTree = "<group>"; };
+		E40A2B182DCEA91A00A1C200 /* horse-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "horse-sound.mp3"; sourceTree = "<group>"; };
+		E40A2B192DCEA91A00A1C200 /* dog-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dog-sound.mp3"; sourceTree = "<group>"; };
+		E40A2B1A2DCEA91A00A1C200 /* cow-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cow-sound.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +71,10 @@
 		E40A2AF82DCE974A00A1C200 /* CarrouselApp */ = {
 			isa = PBXGroup;
 			children = (
+				E40A2B142DCEA90100A1C200 /* AnimalsSounds */,
+				E40A2B092DCE989C00A1C200 /* ViewModels */,
+				E40A2B082DCE989100A1C200 /* Models */,
+				E40A2B072DCE988600A1C200 /* Views */,
 				E40A2AF92DCE974A00A1C200 /* CarrouselAppApp.swift */,
 				E40A2AFB2DCE974A00A1C200 /* ContentView.swift */,
 				E40A2AFD2DCE974C00A1C200 /* Assets.xcassets */,
@@ -65,6 +89,44 @@
 				E40A2B002DCE974C00A1C200 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E40A2B072DCE988600A1C200 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E40A2B0A2DCE98C300A1C200 /* TabViewList.swift */,
+				E40A2B0C2DCE998200A1C200 /* NavigationViewList.swift */,
+				E40A2B102DCE9D2400A1C200 /* AnimalCarrouselView.swift */,
+				E40A2B122DCE9E3400A1C200 /* CarrouselView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E40A2B082DCE989100A1C200 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E40A2B092DCE989C00A1C200 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		E40A2B142DCEA90100A1C200 /* AnimalsSounds */ = {
+			isa = PBXGroup;
+			children = (
+				E40A2B172DCEA91A00A1C200 /* cat-sound.mp3 */,
+				E40A2B1A2DCEA91A00A1C200 /* cow-sound.mp3 */,
+				E40A2B192DCEA91A00A1C200 /* dog-sound.mp3 */,
+				E40A2B182DCEA91A00A1C200 /* horse-sound.mp3 */,
+				E40A2B152DCEA91A00A1C200 /* lion-sound.mp3 */,
+				E40A2B162DCEA91A00A1C200 /* pig-sound.mp3 */,
+			);
+			path = AnimalsSounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +187,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E40A2B1F2DCEA91A00A1C200 /* dog-sound.mp3 in Resources */,
+				E40A2B1E2DCEA91A00A1C200 /* horse-sound.mp3 in Resources */,
+				E40A2B202DCEA91A00A1C200 /* cow-sound.mp3 in Resources */,
 				E40A2B012DCE974C00A1C200 /* Preview Assets.xcassets in Resources */,
+				E40A2B1C2DCEA91A00A1C200 /* pig-sound.mp3 in Resources */,
 				E40A2AFE2DCE974C00A1C200 /* Assets.xcassets in Resources */,
+				E40A2B1D2DCEA91A00A1C200 /* cat-sound.mp3 in Resources */,
+				E40A2B1B2DCEA91A00A1C200 /* lion-sound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +206,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E40A2AFC2DCE974A00A1C200 /* ContentView.swift in Sources */,
+				E40A2B0B2DCE98C300A1C200 /* TabViewList.swift in Sources */,
+				E40A2B112DCE9D2400A1C200 /* AnimalCarrouselView.swift in Sources */,
+				E40A2B132DCE9E3400A1C200 /* CarrouselView.swift in Sources */,
+				E40A2B0D2DCE998200A1C200 /* NavigationViewList.swift in Sources */,
 				E40A2AFA2DCE974A00A1C200 /* CarrouselAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
